@@ -52,3 +52,6 @@ const highestRated = movies.reduce((bestMovie, currMovie) => {
   }
   return bestMovie;
 })
+
+const evens = [2, 4, 6, 8];
+evens.reduce((sum, num) => sum + num)
