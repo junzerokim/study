@@ -1,6 +1,6 @@
 # study
 
-    cos study space.
+    cos study space
 
 [Google](https://www.google.com)
 
