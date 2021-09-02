@@ -1,11 +1,10 @@
-const movies = [
-  {
+const movies = [{
     title: 'Amadeus',
     score: 99,
     year: 1984
   },
   {
-    title:  'Sharknado',
+    title: 'Sharknado',
     score: 35,
     year: 2013
   },
@@ -47,7 +46,7 @@ const movies = [
 ]
 
 const highestRated = movies.reduce((bestMovie, currMovie) => {
-  if(currMovie.score < bestMovie.score) {
+  if (currMovie.score < bestMovie.score) {
     return currMovie;
   }
   return bestMovie;
@@ -55,3 +54,19 @@ const highestRated = movies.reduce((bestMovie, currMovie) => {
 
 const evens = [2, 4, 6, 8];
 evens.reduce((sum, num) => sum + num)
+// 2 + 4, 6 + 6, 12 + 8
+
+const person = {
+    firstName: 'Cos',
+    lastName: 'Kim',
+    fullName: function () {
+      return `${this.firstName} ${this.lastName}`
+    },
+    shoutName: function () {
+      setTimeout(() => {
+        console.log(this);
+        console.log(this.fullName())
+      }, 3000)
+    }
+  }
+  // this는 말 그대로 안에 포함되어 있는 요소를 꺼내온다
