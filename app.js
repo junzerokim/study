@@ -70,3 +70,14 @@ const person = {
     }
   }
   // this는 말 그대로 안에 포함되어 있는 요소를 꺼내온다
+
+  // function rollDie(numSides) {
+  //   if (numSides === undefined) {
+  //     numSides = 6
+  //   }
+  //   return Math.floor(Math.random() * numSides) + 1
+  // }
+
+  function rollDie(numSides = 6) {
+    return Math.floor(Math.random() * numSides) + 1
+  }
