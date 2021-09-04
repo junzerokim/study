@@ -81,3 +81,7 @@ const person = {
   function rollDie(numSides = 6) {
     return Math.floor(Math.random() * numSides) + 1
   }
+
+  function greet(msg, person) {
+    console.log(`${msg}, ${person}!`)
+  }
