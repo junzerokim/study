@@ -82,6 +82,7 @@ const person = {
     return Math.floor(Math.random() * numSides) + 1
   }
 
-  function greet(msg, person) {
-    console.log(`${msg}, ${person}!`)
+  function greet(person, msg = 'Hey', punc = '!') {
+    console.log(`${msg}, ${person}${punc}`)
   }
+  //if you assign a parameter, you must not set in front
